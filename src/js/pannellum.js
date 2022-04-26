@@ -1571,6 +1571,8 @@ function animate() {
 function render() {
     var tmpyaw;
 
+    fireEvent('yawchange',  _this.getYaw());
+
     if (loaded) {
         var canvas = renderer.getCanvas();
 
